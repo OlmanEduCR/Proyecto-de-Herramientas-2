@@ -1,13 +1,12 @@
 import numpy as np
 
-def broadcast_ops(X: np.ndarray, b: np.ndarray, w: np.ndarray): 
+def broadcast_ops(X, b, w): 
     suma = (X + b) 
     multipicador = w.reshape(-1, 1)
     Y = suma * multipicador
     return Y
     
 
-    
 
 #ejemplo 1
 X = np.array([[1,2],
