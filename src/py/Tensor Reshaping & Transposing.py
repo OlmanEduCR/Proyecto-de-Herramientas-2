@@ -4,9 +4,9 @@ Tensor Reshaping & Transposing
 """
 import numpy as np
 def reshape_and_transpose(x: np.ndarray, B: int, C: int, H: int, W: int):
-    if len(x) == B * C * H * W: ## verifica si 
-        x = np.reshape(x, (B, C, H, W))
-        x = np.transpose(x, (0, 2, 3, 1))
+    if len(x) == B * C * H * W: ## Verifica si la cantidad de los elementos de x corresponde al producto de B,C,H,W
+        x = np.reshape(x, (B, C, H, W)) ## le da una nueva forma con respecto a la tupla (B, C, H, W)
+        x = np.transpose(x, (0, 2, 3, 1)) ## transpone x reordenando por los indices
     return x
 
 print(reshape_and_transpose(
