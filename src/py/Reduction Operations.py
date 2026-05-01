@@ -4,7 +4,7 @@ def reduc_tensote(x, axis):
     dic = {
         "Suma" : np.sum(x, axis = axis),
         "Media": np.mean(x, axis = axis),
-        "Maximp": np.max(x, axis = axis),
+        "Maxi": np.max(x, axis = axis),
         "valor maximo": np.argmax(x, axis = axis)
     }
     return dic
